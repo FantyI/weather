@@ -145,7 +145,7 @@
         .city {
             font-size: 24px;
             width: 70%;
-            overflow-x: auto;
+            overflow-x: auto; 
         }
     
         .temp {
