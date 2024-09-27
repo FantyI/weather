@@ -51,7 +51,7 @@ const Weather = () => {
       const { latitude, longitude } = position.coords;
       requestCerver(`${latitude} ${longitude}`);
     });
-  }
+  } 
 
   const Change = event => {
     setCity(event.target.value);

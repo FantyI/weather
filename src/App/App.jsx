@@ -14,7 +14,7 @@ const App = () => {
                 <Route path="/" element={<Weather />} />
                 <Route path="/Map" element={<Map />} />
             </Routes>
-        </div>
+        </div> 
     );
 }
 

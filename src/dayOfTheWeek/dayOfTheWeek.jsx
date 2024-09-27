@@ -10,7 +10,7 @@ const dayOfTheWeek = ({data, day, hours}) => {
           {day}
         </div>
 
-        <div className={s.dateWeek}>
+        <div className={s.dateWeek}> 
           {data.date}
         </div>
 

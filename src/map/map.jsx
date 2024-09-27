@@ -21,15 +21,16 @@ const Map = () => {
     let temporaryData = [];
     useEffect(() => {
         setBackground(JSON.parse(localStorage.getItem(backgroundImg)));
-        setCities(JSON.parse(localStorage.getItem(keyListCity)));
-        requestTOTheServer()
+        setCities(JSON.parse(localStorage.getItem(keyListCity)) || []);
+        requestTOTheServer();
     }, [])
 
     useEffect(() => {
-        console.log(cities.length === 0)
+        console.log(cities)
+
         if (cities.length === 0) {
             setData();
-            return
+            return;
         }
         requestTOTheServer()
     }, [cities])

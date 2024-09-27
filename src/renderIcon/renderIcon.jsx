@@ -40,7 +40,7 @@ const RenderIcon = ({ code }) => {
         icon: 'src/iconWeather/sun.png',
         backgroundImg: 'src/backgroundImg/rainDay.png',
     }
-    // const snowstorm = {
+    // const snowstorm = { 
     //     arr: [1114, 1117],
     //     icon: 'src/iconWeather/sun.png',
     //     backgroundImg: 'src/backgroundImg/rainDay.png',
