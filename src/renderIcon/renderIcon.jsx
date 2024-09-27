@@ -24,7 +24,7 @@ const RenderIcon = ({ code }) => {
         arr: [1000],
         icon: 'src/iconWeather/snowflake-solid (2).svg',
         backgroundImg: 'src/backgroundImg/rainDay.png',
-    }
+    } 
     const cloudy = {
         arr: [1003, 1006, 1009],
         icon: 'src/iconWeather/sun.png',

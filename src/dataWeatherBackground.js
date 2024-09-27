@@ -65,4 +65,4 @@ const rain = {
   //   name: 'snowAndThunderstorms',
   // }
 
-  export const commonArr = [rain, snow, sunny, cloudy, fog, thunderstorm, rainAndThunder]; 
+  export const commonArr = [rain, snow, sunny, cloudy, fog, thunderstorm, rainAndThunder];  

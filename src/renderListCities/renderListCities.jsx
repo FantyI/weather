@@ -26,7 +26,7 @@
 //                     <FontAwesomeIcon className={s.delete} icon={faTrash} onClick={() => delateCity(data.city)} />
 //                 </Link>
 //             </div>
-//         )
+//         ) 
 //     } 
 //     catch {
 //         alert(`Ошибка в работе сервера`);

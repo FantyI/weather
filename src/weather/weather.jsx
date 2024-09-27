@@ -45,7 +45,7 @@ const Weather = () => {
   const sendingData = () => {
     localStorage.setItem(backgroundImg, JSON.stringify([backgroundName, backgroundIsDay]) || '[]')
   }
-
+ 
   const geolacation = () => {
     navigator.geolocation.getCurrentPosition(position => {
       const { latitude, longitude } = position.coords;

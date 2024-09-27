@@ -36,7 +36,7 @@
     ),
     url('src/ImgWeather/day/snow.png');
 }
-.snow.night{
+.snow.night{ 
     background: 
     linear-gradient(
         to right,

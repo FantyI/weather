@@ -29,7 +29,7 @@ const Map = () => {
         console.log(cities)
 
         if (cities.length === 0) {
-            setData();
+            setData(); 
             return;
         }
         requestTOTheServer()
