@@ -1,0 +1,93 @@
+.OtherDays{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.topOtherDays{
+    width: 123px;
+    
+    border: 2px solid white;
+    border-radius: 5px 5px 0 0;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.3); 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+    bottom: -2px;
+    left: 20px;
+    font-family: 'M PLUS Rounded 1c';
+    font-weight: bold;
+}
+
+.dayWeek{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.45);
+    font-size: 21px;
+}
+
+.dateWeek{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.bottomOtherDays{
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 363px;
+    height: 60px;
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+
+.wrapIconDayWeek{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.44);
+    border-radius: 19px 0 0 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconDayWeek{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+}
+
+.cell{
+    height: 60px;
+    width: 76px;
+}
+
+.cell p{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell .name{
+    font-size: 18px;
+}
+
+.cell .meaning{
+    font-family: 'Jua';
+    font-size: 24px;
+}

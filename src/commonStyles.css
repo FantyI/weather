@@ -1,0 +1,171 @@
+.container {
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+}
+
+.rain.day{
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/day/rain.png');
+}
+.rain.night{
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/night/rain.png');
+}
+
+.snow.day{
+    background: 
+    linear-gradient(
+        to right, 
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/day/snow.png');
+}
+.snow.night{ 
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/night/snow.png');
+}
+
+.sunny.day{
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/day/sunny.png');
+}
+
+.sunny.night{
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/night/sunny.png');
+}
+
+.cloudy.day{
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/day/cloudy.png');
+}
+.cloudy.night{
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/night/cloudy.png');
+}
+
+.fog.day{
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/day/fog.png');
+}
+.fog.night{
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/night/fog.png');
+}
+
+.thunderstorm.day{
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/day/thunderstorm.png');
+}
+.thunderstorm.night{
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/night/thunderstorm.png');
+}
+
+/* .snowstorm.day{
+    background-image: url('src/ImgWeather/day/1021_n2229543_big 1.png');
+}
+.snowstorm.night{
+    background-image: url('src/ImgWeather/day/1021_n2229543_big 1.png');
+} */
+
+/* .hail.day{
+    background-image: url('src/ImgWeather/day/1021_n2229543_big 1.png');
+}
+.hail.night{
+    background-image: url('src/ImgWeather/day/1021_n2229543_big 1.png');
+} */
+
+/* .rainAndSnow.day{
+    background-image: url('src/ImgWeather/day/1021_n2229543_big 1.png');
+}
+.rainAndSnow.night{
+    background-image: url('src/ImgWeather/day/1021_n2229543_big 1.png');
+} */
+
+.rainAndThunder.day{
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/day/rainAndThunder.png');
+}
+.rainAndThunder.night{
+    background: 
+    linear-gradient(
+        to right,
+        rgba(0 0 0 / 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url('src/ImgWeather/night/rainAndThunder.png');
+}
+
+/* .snowAndThunderstorms.day{
+    background-image: url('src/ImgWeather/day/1021_n2229543_big 1.png');
+}
+.snowAndThunderstorms.night{
+    background-image: url('src/ImgWeather/day/1021_n2229543_big 1.png');
+} */
