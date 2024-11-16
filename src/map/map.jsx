@@ -1,4 +1,4 @@
-import s from './index.module.css';
+import './index.css';
 import '../commonStyles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faTrash, faHome } from '@fortawesome/free-solid-svg-icons'
@@ -146,30 +146,30 @@ const Map = ({setConditionMap}) => {
 
     return (
         <div className={`container ${background[0]} ${background[1]}`}>
-            {loading && <div className={s.loading}>loading...</div>}
-            <header className={s.header}>
+            {loading && <div className={`loading`}>loading...</div>}
+            <header className={`header`}>
                 {/* <Link to="/"><FontAwesomeIcon className={s.back} icon={faHome} /></Link> */}
-                <FontAwesomeIcon onClick={() => setConditionMap(false)} className={s.back} icon={faHome} />
-                <p className={s.city}>Города</p>
+                <FontAwesomeIcon onClick={() => setConditionMap(false)} className={`back`} icon={faHome} />
+                <p className={`city`}>Города</p>
             </header>
 
-            <div onClick={handlerClickAdd} className={`${s.wrapAdd} ${activeAdd && s.on}`}>
-                <div className={s.decor}>
-                    <div className={s.decorOne}></div>
-                    <div className={s.decorTwo}></div>
+            <div onClick={handlerClickAdd} className={`wrapAdd ${activeAdd && 'on'}`}>
+                <div className={`decor`}>
+                    <div className={`decorOne`}></div>
+                    <div className={`decorTwo`}></div>
                 </div>
-                <div className={s.add}>
+                <div className={`add`}>
                     <input
                         onChange={handlerChange}
                         onKeyDown={hendlerEnter}
                         type="text"
-                        className={s.input}
+                        className={`input`}
                         value={city}
                     />
                     <FontAwesomeIcon
                         onClick={handlerClickSearch}
                         icon={faMagnifyingGlass}
-                        className={s.search}
+                        className={`search`}
                     />
                 </div>
 
@@ -178,27 +178,27 @@ const Map = ({setConditionMap}) => {
             <main>
 
                 {data ? data.map((data) => (
-                    <div key={data.name} className={s.wrapCities} >
-                        <Link to='/' className={s.theAddedCity}>
-                            <img className={s.icon} src={data.icon} alt="" />
-                            <div onClick={() => handlerClickCity(data.name)} className={s.city}>{data.name}</div>
+                    <div key={data.name} className={`wrapCities`} >
+                        <Link to='/' className={`theAddedCity`}>
+                            <img className={`icon`} src={data.icon} alt="" />
+                            <div onClick={() => handlerClickCity(data.name)} className={`city`}>{data.name}</div>
 
-                            <div className={s.temp}>
+                            <div className={`temp`}>
                                 <span>{Math.round(data.temp)}</span>
-                                <sup className={s.degree}>o</sup>
-                                <div className={s.celsius}>C</div>
+                                <sup className={`degree`}>o</sup>
+                                <div className={`celsius`}>C</div>
                             </div>
 
                         </Link>
 
                         <Link to='/Map'>
-                            <FontAwesomeIcon className={s.delete} icon={faTrash} onClick={() => delateCity(data.name)} />
+                            <FontAwesomeIcon className={`delete`} icon={faTrash} onClick={() => delateCity(data.name)} />
                         </Link>
                     </div>
                 ))
                     : null}
             </main>
-            <div className={s.dd}></div>
+            <div className={`dd`}></div>
         </div>
     );
 };

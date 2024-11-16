@@ -4,7 +4,7 @@ import { faMapLocationDot, faLocationDot, faMagnifyingGlass } from '@fortawesome
 import DayOfTheWeek from '../dayOfTheWeek/dayOfTheWeek'
 import { APIkey, trackedCities, backgroundImg } from '../APIkey'
 import { commonArr } from '../dataWeatherBackground'
-import s from './index.module.css'
+import './index.css'
 import '../commonStyles.css'
 
 const Weather = ({setConditionMap}) => {
@@ -123,41 +123,41 @@ const Weather = ({setConditionMap}) => {
   }
 
   return (
-    <div className={`${s.container} ${backgroundName} ${backgroundIsDay}`}>
-      {loading && <div className={s.loading}>loading...</div>}
-      <div className={s.darkening}>
+    <div className={`container ${backgroundName} ${backgroundIsDay}`}>
+      {loading && <div className={`loading`}>loading...</div>}
+      <div className={`darkening`}>
 
         <header>
 
-          <div className={s.left}>
+          <div className={`left`}>
 
-            <div className={`${s.day} ${s.M_PLUS_Rounded_1c}`}>
+            <div className={`day M_PLUS_Rounded_1c`}>
               {console.log(time)}
               {dayWeek(day)}
             </div>
 
-            <div className={`${s.data} ${s.RobotoFonts}`}>
+            <div className={`data RobotoFonts`}>
               {data && data.forecast.forecastday[0].date}
             </div>
 
           </div>
 
-          <div className={s.right}>
+          <div className={`right`}>
             {/* <div className={s.map}>
             </div> */}
-            <FontAwesomeIcon icon={faLocationDot} className={s.location} onClick={geolacation} />
-            <FontAwesomeIcon onClick={() => setConditionMap(true)} icon={faMapLocationDot} className={s.iconMap} />
+            <FontAwesomeIcon icon={faLocationDot} className={`location`} onClick={geolacation} />
+            <FontAwesomeIcon onClick={() => setConditionMap(true)} icon={faMapLocationDot} className={`iconMap`} />
             {/* <Link to="/Map"><FontAwesomeIcon icon={faMapLocationDot} className={s.iconMap} /></Link> */}
           </div>
 
         </header>
 
-        <main className={s.main}>
-          <p className={`${s.city} ${s.M_PLUS_Rounded_1c}`}>
+        <main className={`main`}>
+          <p className={`city M_PLUS_Rounded_1c`}>
             {data && data.location.name}
           </p>
 
-          <div className={`${s.allTemp} ${s.JuaFonts}`}>
+          <div className={`allTemp JuaFonts`}>
 
             {/* <div className="differenceTemp ">
 
@@ -171,10 +171,10 @@ const Weather = ({setConditionMap}) => {
 
               </div> */}
 
-            <div className={s.temp}>
+            <div className={`temp`}>
               <span>{data && Math.round(data.current.temp_c)}</span>
-              <sup className={s.degree}>o</sup>
-              <div className={s.celsius}>C</div>
+              <sup className={`degree`}>o</sup>
+              <div className={`celsius`}>C</div>
             </div>
 
             {/* <div className="differenceTemp ">
@@ -191,9 +191,9 @@ const Weather = ({setConditionMap}) => {
 
           </div>
 
-          <img className={s.icon} src={data && data.current.condition.icon} alt="" />
+          <img className={`icon`} src={data && data.current.condition.icon} alt="" />
 
-          <div className={s.search}>
+          <div className={`search`}>
             <input
               value={city}
               onChange={Change}
@@ -201,29 +201,29 @@ const Weather = ({setConditionMap}) => {
               placeholder='Search...'
               onKeyUp={keyUp}
             />
-            <FontAwesomeIcon onClick={() => (requestCerver())} className={s.iconSearch} icon={faMagnifyingGlass} />
+            <FontAwesomeIcon onClick={() => (requestCerver())} className={`iconSearch`} icon={faMagnifyingGlass} />
           </div>
 
-          <div className={s.parameters}>
+          <div className={`parameters`}>
 
-            <div className={`${s.pressure} ${s.rectangle} ${s.RobotoFonts}`}>
+            <div className={`pressure rectangle RobotoFonts`}>
               <p>pressure</p>
               <p>{data && data.current.pressure_mb}</p>
             </div>
 
-            <div className={`${s.wind} ${s.rectangle} ${s.RobotoFonts}`}>
+            <div className={`wind rectangle RobotoFonts`}>
               <p>wind</p>
               <p>{data && data.current.windchill_c}км/ч</p>
             </div>
 
-            <div className={`${s.humidit} ${s.rectangle} ${s.RobotoFonts}`}>
+            <div className={`humidit rectangle RobotoFonts`}>
               <p>humidity</p>
               <p>{data && data.current.humidity}%</p>
             </div>
 
           </div>
 
-          <div className={s.days}>
+          <div className={`days`}>
             {data && <DayOfTheWeek data={data.forecast.forecastday[1]} day={dayWeek(day + 1)} hours={hours} />}
             {data && <DayOfTheWeek data={data.forecast.forecastday[2]} day={dayWeek(day + 2)} hours={hours} />}
           </div>

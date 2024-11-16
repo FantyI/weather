@@ -1,45 +1,45 @@
-import  s from './index.module.css'
+import './index.css'
 import RenderIcon from '../renderIcon/renderIcon';
 const dayOfTheWeek = ({data, day, hours}) => {
   return (
-    <div className={s.OtherDays}>
+    <div className='OtherDays'>
 
-      <div className={`${s.topOtherDays} ${s.M_PLUS_Rounded_1c}`}>
+      <div className='topOtherDays M_PLUS_Rounded_1c'>
 
-        <div className={s.dayWeek}>
+        <div className='dayWeek'>
           {day}
         </div>
 
-        <div className={s.dateWeek}> 
+        <div className='dateWeek'> 
           {data.date}
         </div>
  
       </div>
 
-      <div className={s.bottomOtherDays}>
+      <div className='bottomOtherDays'>
 
-        <div className={s.wrapIconDayWeek}>
+        <div className='wrapIconDayWeek'>
           <img src={data.hour[hours].condition.icon}/>
         </div>
 
-        <div className={s.cell}>
-          <p className={s.name}>humbity</p>
-          <p className={s.meaning}>{data.hour[hours].humidity}</p>
+        <div className='cell'>
+          <p className='name'>humbity</p>
+          <p className='meaning'>{data.hour[hours].humidity}</p>
         </div>
 
-        <div className={s.cell}>
-          <p className={s.name}>temp</p>
-          <p className={s.meaning}>{Math.round(data.hour[hours].temp_c)}</p>
+        <div className='cell'>
+          <p className='name'>temp</p>
+          <p className='meaning'>{Math.round(data.hour[hours].temp_c)}</p>
         </div>
 
-        <div className={s.cell}>
-          <p className={s.name}>wind</p>
-          <p className={s.meaning}>{data.hour[hours].wind_kph}</p>
+        <div className='cell'>
+          <p className='name'>wind</p>
+          <p className='meaning'>{data.hour[hours].wind_kph}</p>
         </div>
 
-        <div className={s.cell}>
-          <p className={s.name}>pressure</p>
-          <p className={s.meaning}>{data.hour[hours].pressure_mb}</p>
+        <div className='cell'>
+          <p className='name'>pressure</p>
+          <p className='meaning'>{data.hour[hours].pressure_mb}</p>
         </div>
 
       </div>
